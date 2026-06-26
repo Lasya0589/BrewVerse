@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrewVerse | Home</title>
+    <title>BrewVerse | Menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,8 +21,8 @@
       <nav class="navbar container">
         <a class="logo" href="index.html">BrewVerse<span>.</span></a>
         <ul class="menu-links">
-          <li><a class="active-link" href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active-link" href="menu.html">Menu</a></li>
           <li><a href="cart.html">Cart</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -33,26 +33,20 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="hero-tag">Freshly Brewed Everyday</p>
-        <h1>Order your favorite coffee in seconds</h1>
-        <p>
-          Choose from South Filter Coffee, Cappuccino, Latte, Cold Brew and more. Pick size, set quantity, and
-          add instantly to your cart.
-        </p>
-        <a class="btn primary-btn" href="menu.html">Explore Full Menu</a>
-      </div>
-    </section>
-
-    <main class="container page-main">
+    <main class="container page-main with-top-gap">
       <section class="section">
         <div class="section-head">
-          <h2>Popular Coffees</h2>
-          <p>Quick add from our most-loved brews.</p>
+          <h2>All Coffee Types</h2>
+          <p>Select size and quantity on each card before adding to cart.</p>
         </div>
-        <div id="featured-grid" class="products-grid"></div>
+        <div class="menu-controls">
+          <div id="category-chips" class="chips"></div>
+          <label class="search-box" for="search-input">
+            <span class="material-symbols-outlined">search</span>
+            <input id="search-input" type="search" placeholder="Search coffee...">
+          </label>
+        </div>
+        <div id="products-grid" class="products-grid"></div>
       </section>
     </main>
 

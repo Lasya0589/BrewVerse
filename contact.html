@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrewVerse | Home</title>
+    <title>BrewVerse | Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,10 +21,10 @@
       <nav class="navbar container">
         <a class="logo" href="index.html">BrewVerse<span>.</span></a>
         <ul class="menu-links">
-          <li><a class="active-link" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="cart.html">Cart</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active-link" href="contact.html">Contact</a></li>
         </ul>
         <button id="open-cart-btn" class="icon-btn" aria-label="Open cart">
           <span class="material-symbols-outlined">shopping_bag</span>
@@ -33,26 +33,31 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="hero-tag">Freshly Brewed Everyday</p>
-        <h1>Order your favorite coffee in seconds</h1>
-        <p>
-          Choose from South Filter Coffee, Cappuccino, Latte, Cold Brew and more. Pick size, set quantity, and
-          add instantly to your cart.
-        </p>
-        <a class="btn primary-btn" href="menu.html">Explore Full Menu</a>
-      </div>
-    </section>
-
-    <main class="container page-main">
+    <main class="container page-main with-top-gap">
       <section class="section">
         <div class="section-head">
-          <h2>Popular Coffees</h2>
-          <p>Quick add from our most-loved brews.</p>
+          <h2>Contact BrewVerse</h2>
+          <p>Reach out for custom orders, events, or collaboration.</p>
         </div>
-        <div id="featured-grid" class="products-grid"></div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Store Info</h3>
+            <p><strong>Email:</strong> hello@brewverse.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p><strong>Address:</strong> MG Road, Bengaluru</p>
+            <p><strong>Hours:</strong> 8:00 AM - 10:00 PM</p>
+          </div>
+          <form class="contact-card">
+            <h3>Send Message</h3>
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required>
+            <label>Message</label>
+            <textarea rows="4" placeholder="Tell us what you need" required></textarea>
+            <button type="button" class="btn primary-btn" id="contact-send-btn">Send Message</button>
+          </form>
+        </div>
       </section>
     </main>
 

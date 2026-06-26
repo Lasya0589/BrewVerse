@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrewVerse | Home</title>
+    <title>BrewVerse | Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,9 +21,9 @@
       <nav class="navbar container">
         <a class="logo" href="index.html">BrewVerse<span>.</span></a>
         <ul class="menu-links">
-          <li><a class="active-link" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="cart.html">Cart</a></li>
+          <li><a class="active-link" href="cart.html">Cart</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="open-cart-btn" class="icon-btn" aria-label="Open cart">
@@ -33,26 +33,26 @@
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="hero-tag">Freshly Brewed Everyday</p>
-        <h1>Order your favorite coffee in seconds</h1>
-        <p>
-          Choose from South Filter Coffee, Cappuccino, Latte, Cold Brew and more. Pick size, set quantity, and
-          add instantly to your cart.
-        </p>
-        <a class="btn primary-btn" href="menu.html">Explore Full Menu</a>
-      </div>
-    </section>
-
-    <main class="container page-main">
+    <main class="container page-main with-top-gap">
       <section class="section">
         <div class="section-head">
-          <h2>Popular Coffees</h2>
-          <p>Quick add from our most-loved brews.</p>
+          <h2>Your Cart</h2>
+          <p>Review items, adjust quantity, and place your order.</p>
         </div>
-        <div id="featured-grid" class="products-grid"></div>
+        <div class="cart-page-layout">
+          <ul id="cart-page-items" class="cart-page-items"></ul>
+          <div class="cart-page-summary">
+            <h3>Summary</h3>
+            <div class="summary-row"><span>Items</span><span id="cart-page-item-total">0</span></div>
+            <div class="summary-row"><span>Subtotal</span><span id="cart-page-subtotal">$0.00</span></div>
+            <div class="summary-row"><span>Tax (8%)</span><span id="cart-page-tax">$0.00</span></div>
+            <div class="summary-row total"><span>Total</span><span id="cart-page-total">$0.00</span></div>
+            <div class="drawer-actions">
+              <button id="cart-page-clear" class="btn secondary-btn">Clear Cart</button>
+              <button id="cart-page-checkout" class="btn primary-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
